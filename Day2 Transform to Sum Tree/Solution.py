@@ -55,3 +55,21 @@ def buildTree(s):
             size=size+1
         i=i+1
     return root
+# A utility function to print
+# inorder traversal of a Binary Tree
+ def printInorder(Node):
+     if (Node == None):
+         return
+    printInorder(Node.left)
+    print(Node.data, end ="")
+    printInorder(lode.right)
+if __name__=="main"
+    t=int(input())
+    for _ in range(0,t):
+        s=input()
+        root=buildTree(s)
+        ob = Solution()
+        ob.toSumTree(root)
+        printInorder(root)
+        print()
+
