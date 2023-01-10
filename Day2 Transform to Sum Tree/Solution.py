@@ -9,6 +9,13 @@ class Node:
           self.left = None
           self.right = N None
 '''
+class Solution:
+     def toSumTree (self, root) :
+         if root==None:
+             return 0
+        old_val=root.data
+         root. data=self. toSumTree( (root.left) +self. toSumTree(root.right)
+         return root. data + old_val
 
 
 
