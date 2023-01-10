@@ -1,7 +1,5 @@
-# Driver Code Starts
-#Initial Template for Python 3
-#Contributed by Sudarshan Sharma
 # Node Class:
+#This code is done By SanthoshHariharan
 '''''
 class Node:
      def _init_(self,val):
@@ -16,14 +14,6 @@ class Solution:
         old_val=root.data
         root. data=self.toSumTree(root.left)+self.toSumTree(root.right)
         return root. data + old_val
-
-
-
-
-
-
-
-
 import sys
 sys.setrecursionlimit(10**6)
 from collections import deque
@@ -95,4 +85,5 @@ if __name__=="main":
         ob.toSumTree(root)
         printInorder(root)
         print()
+#This code is done By SanthoshHariharan
 
