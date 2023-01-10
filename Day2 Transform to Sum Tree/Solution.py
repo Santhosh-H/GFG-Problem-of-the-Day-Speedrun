@@ -1,7 +1,14 @@
 # Driver Code Starts
 #Initial Template for Python 3
 #Contributed by Sudarshan Sharma
-
+# Node Class:
+'''''
+class Node:
+     def _init_(self,val):
+          self.data = val
+          self.left = None
+          self.right = N None
+'''
 
 
 
