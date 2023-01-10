@@ -12,8 +12,8 @@ class Node:
         self.left = None
 # Function to Build Tree
 def buildTree(s):
-   #Corner Case
-   if(len(s)==0 or s[0]=="N"):
+    #Corner Case
+    if(len(s)==0 or s[0]=="N"):
         return None
     # Creating list of strings from input
     # string after spliting by space
@@ -55,20 +55,20 @@ def buildTree(s):
             size=size+1
         i=i+1
     return root
-# A utility function to print
-# inorder traversal of a Binary Tree
- def printInorder(Node):
-     if (Node == None):
-         return
+    # A utility function to print
+    # inorder traversal of a Binary Tree
+def printInorder(Node):
+    if (Node == None):
+        return
     printInorder(Node.left)
     print(Node.data, end ="")
-    printInorder(lode.right)
-if __name__=="main"
+    printInorder(Node.right)
+if __name__=="main":
     t=int(input())
     for _ in range(0,t):
         s=input()
         root=buildTree(s)
-        ob = Solution()
+        ob=Solution()
         ob.toSumTree(root)
         printInorder(root)
         print()
