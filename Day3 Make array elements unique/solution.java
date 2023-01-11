@@ -25,7 +25,9 @@ class Solution{
         for(int i=1;i<N;i++){
             if(arr[i]<=arr[i-1]){
               int d=arr[i-1]-arr[i];
-                
+              ans=ans+d+1;
+              arr[i]=arr[i-1]+1;
+
             }
         }
     }
