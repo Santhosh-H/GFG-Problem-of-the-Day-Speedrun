@@ -18,3 +18,8 @@ class make{
         }
     }
 }
+class Solution{
+    public long minIncrement(int[] ar,int N){
+        
+    }
+}
