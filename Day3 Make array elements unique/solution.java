@@ -27,7 +27,6 @@ class Solution{
               int d=arr[i-1]-arr[i];
               ans=ans+d+1;
               arr[i]=arr[i-1]+1;
-
             }
         }
     }return ans;
