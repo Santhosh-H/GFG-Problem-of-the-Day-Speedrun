@@ -20,6 +20,12 @@ class make{
 }
 class Solution{
     public long minIncrement(int[] ar,int N){
-        
+        int ans=0;
+        Arrays.sort(arr);
+        for(int i=1;i<N;i++){
+            if(arr[i]<=arr[i-1]){
+                
+            }
+        }
     }
 }
