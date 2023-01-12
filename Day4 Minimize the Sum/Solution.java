@@ -12,17 +12,10 @@ Class Solution{
             ans=ans+nsum;
             pq.add(nsum);
         }
+    return ans;
     }
 }
-
-
-
-
-
-
-
-
-
+//Driver Code
 public class GFG{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
