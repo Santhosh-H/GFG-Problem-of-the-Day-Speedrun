@@ -1,3 +1,13 @@
+//Credits Santhosh Hariharan
+
+
+
+
+
+
+
+
+
 public class GFG{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
@@ -16,3 +26,4 @@ public class GFG{
 
     }
 }
+//Credits Santhosh Hariharan
