@@ -1,4 +1,11 @@
 //Credits Santhosh Hariharan
+Class Solution{
+    long minimizeSum(int N,int arr[]){
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>
+        for(int i = 0; i < N;i++)
+        
+    }
+}
 
 
 
