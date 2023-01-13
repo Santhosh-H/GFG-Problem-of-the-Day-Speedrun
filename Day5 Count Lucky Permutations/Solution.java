@@ -45,9 +45,9 @@ class Solution {
             }
         }    
         long powe=0;
-        
-        
-
-
-
+        for(int i=0;i<N;i++)
+        powe+=dp[i][(1<<N)-1];
+            return powe;
+    }        
+}
 //Credits Santhosh Hariharan
