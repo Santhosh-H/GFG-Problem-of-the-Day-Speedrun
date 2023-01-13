@@ -27,3 +27,4 @@ Class GFG{
 }}
 //end of Driver code
 //Solution
+class Solution {
