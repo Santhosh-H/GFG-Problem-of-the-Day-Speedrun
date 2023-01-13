@@ -44,4 +44,10 @@ class Solution {
                     }  
             }
         }    
-        long powe=0;       
+        long powe=0;
+        
+        
+
+
+
+//Credits Santhosh Hariharan
