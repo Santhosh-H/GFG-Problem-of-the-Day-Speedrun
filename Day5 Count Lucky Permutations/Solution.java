@@ -17,8 +17,12 @@ Class GFG{
             int graph[][]=new int [M][2];
             for(i=0;i<M;i++){
                 String s1[]=read.readLine().trim().split(" ");
-                
+                graph[i][0]=Integer.parseInt(s1[0]);
+                graph[i][1]=Integer.parseInt(s1[1]);
             }
+            Solution ob =new Solution();
+            System.out.println(ob.luckyPermutations(N,M,arr,graph));
     
         }
-}
+}}
+//end of Driver code
