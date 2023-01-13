@@ -34,3 +34,5 @@ class Solution {
         for(int i=0;i<M;i++){
             adj[graph[i][0]-1][graph[i][1]-1]=true;
             adj[graph[i][1]-1][graph[i][0]-1]=true;}
+            for(int i=0;i<N;i++)
+            dp[i][1<<i]=1;
