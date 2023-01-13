@@ -40,4 +40,8 @@ class Solution {
                 for(int i=0;i<N;i++){
                     for(int j=0;j<N;j++){
                     if(i!=j && adj[arr[i]-1][arr[j]-1] && arr[i]!=arr[j] && (1 &(bitmask>>j))>0)
-                    dp[i][bitmask]+=dp[j][bitmask ^ (1<<i)];   
+                    dp[i][bitmask]+=dp[j][bitmask ^ (1<<i)];
+                    }  
+            }
+        }    
+        long powe=0;       
