@@ -36,3 +36,6 @@ class Solution {
             adj[graph[i][1]-1][graph[i][0]-1]=true;}
             for(int i=0;i<N;i++)
             dp[i][1<<i]=1;
+            for(int bitmask=1;bitmask<(1<<N);bitmask++){
+                for(int i=0;i<N;i++){
+                    for(int j=0;j<N;j++){
