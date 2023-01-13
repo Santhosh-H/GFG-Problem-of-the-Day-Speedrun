@@ -12,5 +12,13 @@ Class GFG{
             int arr[]=new int[(int)(N)];
             int i=0;
             String inputLine2[]=read.readLine().trim().split(" ");
-    }
+            for(int i=0;i<N;i++)
+            arr[i]=Integer.parseInt(inputLine2[i]);
+            int graph[][]=new int [M][2];
+            for(i=0;i<M;i++){
+                String s1[]=read.readLine().trim().split(" ");
+                
+            }
+    
+        }
 }
