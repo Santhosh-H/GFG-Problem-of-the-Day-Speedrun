@@ -52,3 +52,8 @@ public:
     return x;
   }
 };
+tree obj1,obj2;
+class Solution{
+public:
+  vector<int> maximumToys(int N,vector<int> A,int Q,vector<vector<int>> Queries){
+      // code here
