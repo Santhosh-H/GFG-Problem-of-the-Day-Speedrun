@@ -1,4 +1,4 @@
-//Credits santhosh Hariharan
+//C//This code Was done By Santhosh Hariharan
 #include<bits/stdc++.h>
 using namespace std;
 //Driver Code
@@ -85,3 +85,21 @@ public:
           low=mid+1;
         }
       }
+    long long ans=obj2.get(pos-1);
+      long long mx=min((C-obj1.get(pos-1))/pos,(long long)fr[pos]);
+      ans+=mx;
+      res.push_back(ans);
+      for(int j=2;j<i.size();j++){
+        obj1.add(A[i[j]-1],A[i[j]-1]);
+        obj2.add(A[i[j]-1],1);
+      }
+    }
+    for(int i=0;i<A.size();i++){
+      obj1.add(A[i],-A[i]);
+      obj2.add(A[i],-1);
+      fr[A[i]]--;
+    }
+    return res;
+  }
+};
+//This code Was done By Santhosh Hariharan
