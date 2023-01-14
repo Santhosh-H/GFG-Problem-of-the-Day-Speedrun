@@ -57,3 +57,31 @@ class Solution{
 public:
   vector<int> maximumToys(int N,vector<int> A,int Q,vector<vector<int>> Queries){
       // code here
+      vector<int> res;
+
+    for(auto i:A){
+      fr[i]++;
+    }
+
+    for(int i=0;i<A.size();i++){
+      obj1.add(A[i],A[i]);
+      obj2.add(A[i],1);
+    }
+    for(auto i:Queries){
+      long long C=i[0];
+      for(int j=2;j<i.size();j++){
+        obj1.add(A[i[j]-1],-A[i[j]-1]);
+        obj2.add(A[i[j]-1],-1);
+      }
+      long long low=1,hg=1e6;
+      long long pos=1e6;
+      while(low<=hg){
+        int mid=(low+hg)/2;
+        if(obj1.get(mid)>=C){
+          pos=mid;
+          hg=mid-1;
+        }
+        else{
+          low=mid+1;
+        }
+      }
