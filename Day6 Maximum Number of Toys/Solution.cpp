@@ -29,3 +29,26 @@ using namespace std;
      for (auto i:ans)
     cout<<endl;
       }}
+//Code Starts
+//User function Template for C++
+const int N=1e6+5;
+int fr[N];
+class tree{
+public:
+  vector<long long> bit;
+  tree(){
+    bit=vector<long long>(N);
+  }
+  void add(int node,int v)
+  {
+     for(;node<N;node+=(node&(-node)))
+      bit[node]+=v;
+  }
+  long long get(int node)
+  {
+    long long x=0;
+    for(;node>0;node-=(node&(-node)))
+      x+=bit[node];
+    return x;
+  }
+};
