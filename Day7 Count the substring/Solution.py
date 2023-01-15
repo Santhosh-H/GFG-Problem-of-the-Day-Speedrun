@@ -1,12 +1,4 @@
 from collections import defaultdict
-#this code was done By santhosh hariharan
-#Driver Code Starts
-#Initial Template for Python 3
-if __name__ == '__main__':
-    for _ in range(int(input(())):
-        S = input()
-        print(Solution().countSubstring(s))
-#  Driver Code Ends
 class Solution():
     def countSubstring(self, S):
         #your code here
@@ -28,4 +20,12 @@ class Solution():
             x2[count]=0
             ans=ans+x1[count-1]
         return ans
+#this code was done By santhosh hariharan
+#Driver Code Starts
+#Initial Template for Python 3
+if __name__ =='__main__':
+    for _ in range(int(input())):
+        S = input()
+        print(Solution().countSubstring(S))
+#  Driver Code Ends
 #this code was done By santhosh hariharan
