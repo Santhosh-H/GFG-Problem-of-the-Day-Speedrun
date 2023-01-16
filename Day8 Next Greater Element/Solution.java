@@ -24,3 +24,28 @@ class GFG {
 	}
 }
 // } Driver Code Ends
+class Solution{
+    public static long[] nextLargerElement(long[] arr, int n) { 
+        // Your code here
+
+        long ans[] = new long[n];
+        int index = n-1;
+        ans[index--] = -1;
+
+        ArrayDeque<Long> st = new ArrayDeque<>();
+        st.push(arr[n-1]);
+
+        //s2
+        for(int i=n-2; i>=0; i--)
+        {
+            while(!st.isEmpty() && arr[i] > st.peek()) //
+            st.pop();
+
+            long res = st.isEmpty() ? -1 : st.peek();
+            ans[index--] = res;
+
+            st.push(arr[i]);
+        }
+        return ans;
+    } 
+}
